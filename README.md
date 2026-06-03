@@ -1,115 +1,83 @@
 # 🛡️ CodeSentinel AI
 
-### AI-Powered Python Code Security Analyzer
-
-CodeSentinel AI is an intelligent security analysis tool that scans Python code for vulnerabilities, bugs, and performance issues using rule-based detection and Google Gemini AI. It provides real-time analysis, risk scoring, and structured AI-generated reports through an interactive Streamlit dashboard.
+CodeSentinel AI is an AI-powered Python code security analyzer that detects vulnerabilities, bugs, and code quality issues using rule-based scanning and Google Gemini AI. It provides real-time analysis, security scoring, and AI-generated improvement suggestions through an interactive Streamlit dashboard.
 
 ---
 
 ## 🚀 Features
-
-- 📂 Upload and analyze Python files instantly  
-- 🔐 Detect security issues like SQL Injection, hardcoded passwords, and unsafe functions  
-- 🧠 AI-powered code review using Google Gemini API  
-- 📊 Security risk scoring system (0–100)  
-- ⚠️ Categorized vulnerability detection (High / Medium / Low)  
-- 📈 Interactive Streamlit dashboard  
-- 🧾 Structured AI analysis output  
-- 💡 Actionable recommendations for code improvement  
+- Upload Python files for instant analysis  
+- Detect security issues like SQL Injection, hardcoded passwords, unsafe functions  
+- AI-powered code review using Google Gemini AI  
+- Security risk score (0–100)  
+- High / Medium risk classification  
+- Bug detection and improvement suggestions  
+- Interactive Streamlit dashboard  
 
 ---
 
 ## 🧠 AI Capabilities
-
-Uses Google Gemini AI to perform deep code analysis:
-
 - Security vulnerability detection  
 - Bug identification  
-- Code quality improvements  
+- Code improvement suggestions  
 - Risk level classification  
 
 ---
 
 ## 🏗️ Project Structure
-Code_Sentinel_AI/
-│
-├── app.py # Streamlit frontend
-├── scanner.py # Rule-based vulnerability scanner
-├── ai_analyzer.py # Gemini AI integration
-├── risk_score.py # Security score calculation
-├── database.py # Scan history storage
-├── requirements.txt # Dependencies
+Code_Sentinel_AI/  
+├── app.py  
+├── scanner.py  
+├── ai_analyzer.py  
+├── risk_score.py  
+├── database.py  
+├── requirements.txt  
+
 
 ---
 
 ## ⚙️ Installation & Setup
 
+Clone the repository:
+git clone https://github.com/your-username/CodeSentinel-AI.git  
+cd CodeSentinel-AI  
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/your-username/CodeSentinel-AI.git
-cd CodeSentinel-AI
+Install dependencies:
+pip install -r requirements.txt  
 
-2️⃣ Create virtual environment (optional)
-python -m venv venv
-venv\Scripts\activate   # Windows
+Create `.env` file:
+GEMINI_API_KEY=your_api_key_here  
 
-3️⃣ Install dependencies
-pip install -r requirements.txt
+Get API key:
+https://aistudio.google.com/app/apikey  
 
-4️⃣ Add API Key
+Run the project:
+python -m streamlit run app.py  
 
-Create a .env file in the root folder:
+---
 
-GEMINI_API_KEY=your_api_key_here
+## 📊 Example Output
 
-👉 Get API key from:
-https://aistudio.google.com/app/apikey
-
-5️⃣ Run the project
-python -m streamlit run app.py
-
-📊 Example Output
-Security Score: 50/100
+Security Score: 50/100  
 
 High Risk:
-- Possible SQL Injection detected
-- Dangerous eval() usage
+- Possible SQL Injection detected  
+- Dangerous eval() usage  
 
 Medium Risk:
-- Hardcoded password found
+- Hardcoded password found  
 
-🔥 AI Analysis Sample
-{
-  "security_issues": ["SQL Injection risk"],
-  "bugs": ["Unsafe input concatenation"],
-  "improvements": ["Use parameterized queries"],
-  "risk_level": "High"
-}
+---
 
-🛠️ Tech Stack
-Python 🐍
-Streamlit 🌐
-Google Gemini AI 🤖
-Pandas 📊
-dotenv 🔐
+## 🛠️ Tech Stack
+Python • Streamlit • Google Gemini AI • Pandas • dotenv  
 
-🎯 Future Enhancements
-PDF report generation
-GitHub repository scanning
-Authentication system
-CI/CD integration
-Multi-language support
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
+Sathya Poojitha  
+MCA Graduate | Python Developer   
 
-Sathya Poojitha
-MCA Graduate | Python Developer 
+---
 
-⭐ Support
-
-If you like this project:
-
-⭐ Star this repository
-🍴 Fork it
-🛠️ Contribute improvements
+## ⭐ Support
+If you like this project, please star the repository ⭐
